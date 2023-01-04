@@ -1,0 +1,436 @@
+*{margin: 0; padding: 0; border: 0;}
+ul,li{list-style: none;}
+a{text-decoration: none; color: black;}
+.cf::after{
+    content: '';
+    display: block;
+    clear: both;
+}
+.cb{clear: both;}
+
+body{font-family: "맑은 고딕", 돋움, sans-serif; margin: 0; padding: 0;}
+img{margin: 0; padding: 0;}
+html{min-width: 1455px;}
+
+/* 해더 */
+#header{
+    width: 100%;
+    height: 90px;
+    background-color: black;
+    margin: 0 auto;
+    z-index: 100;
+    position: relative;
+}
+#header > ul{
+    height: 90px;
+    text-align: center;
+    overflow: hidden;
+    transition: height 0.4s;
+    background-color: black;
+    padding-left: 500px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+#header > ul > li{
+    float: left;
+}
+#header > ul > li > h1 > img{
+    margin-top: 20px;
+    margin-left: -850px;
+}
+#header > ul > li > a{
+    display: block;
+    padding: 0 40px;
+    height: 90px;
+    line-height: 90px;
+    font-weight: 600;
+    color: #ffffff;
+    font-size: 1.2em;
+    border-bottom: 3px solid transparent;
+}
+#header > ul > li:nth-child(6){
+    position: absolute;
+    right: 80px;
+}
+#header > ul > li:nth-child(7){
+    position: absolute;
+    right: 10px;
+}
+#header ul ul a{
+	display: block;
+	padding: 0 35px 0 40px;
+	line-height: 38px;
+	font-weight: 400;
+	color: #ffffff;
+	transition: all 0.3s;
+}
+
+#header > ul > li:hover > a{
+    color: rgb(233, 66, 66);
+    border-bottom: 3px solid rgb(233, 66, 66);
+}
+#header > ul > li:nth-child(6):hover a, #header > ul > li:nth-child(7):hover a{
+    border-bottom: none;
+}
+#header > ul.active{
+	height: 430px;
+}
+
+#header ul ul.active{
+	height: 430px;
+    width: 100%;
+}
+
+#header > ul > li:hover ul{
+	background-color: #888;
+}
+#header > ul> li > ul > li:hover a{
+    color: rgb(233, 66, 66);
+}
+
+
+/* 배너 */
+#banner{
+    width: 100%;
+    height: 990px;
+    background-color: aquamarine;
+    margin: 0 auto;
+}
+#brandVisual{
+    width: 100%;
+    height: 990px;
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+}
+#brandVisual ul{
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 990px;
+}
+#brandVisual ul li{
+    position: absolute;
+    width: 100%;
+    height: 990px;
+}
+#brandVisual ul li a{
+    display: block;
+    margin-left: 200px;
+    margin-top: 300px;
+    color: white;
+    
+}
+/* #brandVisual ul li:nth-child(4) a {display: block; } */
+#brandVisual ul li span{
+    width: 680px;
+    display: block;
+    font-size: 5em;
+    color: white;
+    font-weight: bold;
+    margin-left: 200px;
+}
+
+
+/* 버튼 */
+#banner .buttonList:after{
+    content: ""; 
+    display: block; 
+    clear: both;
+}
+
+/* visual_0, visual_1, visual_2 위치정렬 */
+#brandVisual .visual_0{left: 0; background: url(../image/banner1.jpg) 50% 0 no-repeat; background-size: cover;}
+#brandVisual .visual_1{left: 100%; background: url(../image/banner2.jpg) 50% 0 no-repeat; background-size: cover;}
+#brandVisual .visual_2{left: 200%; background: url(../image/banner3.jpg) 50% 0 no-repeat; background-size: cover;}
+#brandVisual .visual_3{left: 300%; background: url(../image/banner4.jpg) 50% 0 no-repeat; background-size: cover;}
+#brandVisual .visual_4{left: 400%; background-color: yellow; width: 100%; height: 990px; }
+
+/* 버튼 위치 지정 */
+#buttonList:after{content: ""; display: block; clear: both;}
+#buttonList li{background: rgb(166, 225, 233) 0 -16px no-repeat; width: 15px; height: 15px; float: left; position: relative; left: 50%; top: -150px; overflow: hidden; margin: 0 5px; cursor: pointer; border-radius: 10px;}
+#buttonList li a{display: block; text-indent: -9999px;} /* 글씨 제거 */
+#buttonList li.on{background-position: 0 0;} /* 활성화된 버튼 */
+
+
+
+
+
+
+
+
+
+#solution{
+    width: 1855px;
+    height: 1080px;
+    /* background-color: orange; */
+    margin: 0 auto;
+}
+#solution div{
+    width: 540px;
+    height: 440px;
+    float: left;
+    background-color: rgb(61, 61, 61);
+    margin: 40px 0 0 60px;
+    cursor: pointer;
+    overflow: hidden;
+}
+#solution h2{
+    font-size: 3em;
+    margin-left: 675px;
+    padding-top: 30px;
+}
+#solution div ul{
+    margin-top: 25px;
+    margin-left: 10px;
+    font-size: 1.1em;
+    color: white;
+}
+#solution div ul li p{
+    margin-top: 15px;
+    font-size: 14px;
+}
+#solution div:hover img{
+    overflow: hidden;
+    transform: scale(1.1,1.1);
+    transition: all 0.6s; 
+}
+
+
+
+/* 베스트 상품 */
+#product{
+    width: 100%;
+    height: 850px;
+    background-color: #f6f6f6;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#product article{
+    float: left;
+    width: 24%;
+    border-right: 1px solid #6e6e6e;
+    height: 660px;
+    /* background-color: grey; */
+    transition: all 0.6s;
+    overflow: hidden;
+    margin-top: 50px;
+    cursor: pointer;
+}
+
+#product h2{
+    font-size: 3em;
+    padding-top: 20px;
+    text-align: center;
+}
+#product h3{
+    position: absolute;
+    font-size: 2em;
+    bottom: 30px;
+    left: 20px;
+}
+/* 첫번째 상품 */
+#product article:nth-child(2){
+    position: relative;
+    transition: all 0.6s;
+    margin-left: 35px;
+}
+#product article:nth-child(2) img{
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    transition: all 0.6s;
+    margin-top: 150px;
+}
+#product article:nth-child(2):hover img{
+    right: 20px;
+}
+#product article:nth-child(2):hover{
+    background-color: rgb(233, 66, 66);
+}
+/* 두번째 */
+#product article:nth-child(3){
+    position: relative;
+    transition: all 0.6s;
+}
+#product article:nth-child(3) img{
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    transition: all 0.6s;
+    margin-top: 120px;
+}
+#product article:nth-child(3):hover img{
+    right: 2px;
+}
+#product article:nth-child(3):hover{
+    background-color: rgb(233, 66, 66);
+}
+/* 세번째 */
+#product article:nth-child(4){
+    position: relative;
+    transition: all 0.6s;
+}
+#product article:nth-child(4) img{
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    transition: all 0.6s;
+    margin-top: 50px;
+}
+#product article:nth-child(4):hover img{
+    right: 100px;
+}
+#product article:nth-child(4):hover{
+    background-color: rgb(233, 66, 66);
+}
+/* 네번째 */
+#product article:last-child{
+    position: relative;
+    transition: all 0.6s;
+}
+#product article:last-child img{
+    height: auto;
+    position: absolute;
+    top: 0;
+    right: -100px;
+    transition: all 0.6s;
+    margin-top: 150px;
+}
+#product article:last-child:hover img{
+    right: 90px;
+}
+#product article:last-child:hover{
+    background-color: rgb(233, 66, 66);
+}
+
+/* 이벤트 */
+#event{
+    width: 1855px;
+    height: 1080px;
+    /* background-color: yellow; */
+    margin: 0 auto;
+    box-sizing: border-box;
+} 
+#event h2{
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+}
+#event article{
+    float: left;
+    margin: 40px auto 0 auto;
+    margin-left: 18px;
+}
+
+/* 서포트 */
+#support{
+    width: 1855px;
+    height: 570px;
+    /* background-color: salmon; */
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+#support h2{
+    font-size: 3em;
+    text-align: center;
+    padding: 20px;
+}
+#support div{
+    float: left;
+    width: 440px;
+    height: 290px;
+    background-color: #727272;
+    box-sizing: border-box;
+    margin-top: 100px;
+    cursor: pointer;
+}
+#support div p{
+    font-size: 2.2em;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+    padding-top: 60px;
+}
+#support div img{
+    margin-left: 340px;
+    margin-top: 100px;
+}
+#support div:last-child{
+    margin-left: 31px;
+}
+#support div:nth-child(3), #support div:nth-child(4){
+    margin-left: 31px;
+}
+
+/* 푸터 */
+#footer{
+    width: 100%;
+    height: 400px;
+    background-color: #000000;
+    margin: 0 auto;
+    box-sizing: border-box;
+    position: relative;
+}
+#footer li{
+    color: white;
+}
+#footer p{
+    color: white;
+}
+#footer address{
+    font-style: normal;
+}
+#footer .policy{
+    padding-left: 80px;
+    padding-top: 80px;
+    font-size: 1.2em;
+}
+#footer address li{
+    padding: 20px 0 0 80px;
+}
+#footer address p{
+    padding: 20px 0 0 80px;
+}
+#footer .family{
+    position: absolute;
+    top: 80px;
+    right: 400px;
+}
+#footer .family select {
+    background-color: rgb(102, 102, 102); 
+    width: 145px; 
+    height: 40px; 
+    padding-left: 5px; 
+    margin-right: 5px; 
+    color: white; 
+}
+#footer .canon{
+    position: absolute;
+    top: 80px;
+    right: 130px;
+}
+#footer .canon select {
+    background-color: rgb(102, 102, 102); 
+    height: 40px; 
+    padding-left: 5px; 
+    margin-right: 5px;  
+    color: white;
+}
+#footer .icon{
+    float: left;
+    position: absolute;
+    top: 150px;
+    right: 250px;
+    width: 300px;
+}
+#footer .icon img{
+    float: left;
+    width: 50px;
+    margin: 5px;
+
+}
